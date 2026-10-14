@@ -1,233 +1,201 @@
-# Awesome-Smart-Contract-Flaw-Verification-Tools
-
-## Top Smart Contract Flaw Verification Tools Ecosystem
-
-
-
-**Curated List of SaaS Products & Open-Source GitHub Projects**  
-
-*Focused on Static Analysis, Formal Verification & Runtime Monitoring*  
-
-**Last updated: March 2026**
-
-
-
-This repository tracks notable **SaaS platforms** and **open-source projects** for **Smart Contract Flaw Verification**. These tools analyze Web3 and digital contract logic dynamically and statically — finding vulnerabilities, proving correctness, and monitoring deployed contracts before attackers can exploit them.
-
-
-
-**Examples** include CertiK, OpenZeppelin, ConsenSys Diligence, Trail of Bits, Quantstamp, Halborn, Hacken, PeckShield, and Immunefi (the category leaders).
-
-
-
-**Open-source emphasis**: This section is heavily expanded with every major active project for self-hosting, custom analysis pipelines, and transparent verification — ideal for security researchers, developers building DeFi protocols, and teams avoiding per-audit pricing.
-
-
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-
-
-## Table of Contents
-
-- [SaaS/Hosted Platforms](#saas-hosted-platforms)
-
-- [Open-Source GitHub Projects](#open-source-github-projects)
-
-- [How to Contribute](#how-to-contribute)
-
-- [Disclaimer](#disclaimer)
-
-
-
-## SaaS/Hosted Platforms
-
-
-
-- **[CertiK](https://www.certik.com/)**  
-
-  High-volume audit firm with thousands of completed audits and the Skynet on-chain monitoring system that watches deployed contracts post-launch. Common on exchange listing checklists, though breadth is the model rather than depth .
-
-
-
-- **[OpenZeppelin](https://www.openzeppelin.com/)**  
-
-  Maintains the most widely used open-source contract library for Solidity development. Auditors review code built on patterns they authored, typically pairing multiple senior reviewers with static analysis and fuzzing. The reference-standard choice for EVM protocols .
-
-
-
-- **[ConsenSys Diligence](https://diligence.security/)**  
-
-  Audit arm of ConsenSys (MetaMask, Infura pedigree), giving deep native Ethereum expertise. Client list includes Aave, Balancer, and 1inch. Pairs manual review with in-house tooling built specifically for Ethereum mainnet protocols .
-
-
-
-- **[Trail of Bits](https://www.trailofbits.com/)**  
-
-  Top name for hard problems — cryptography, zero-knowledge circuits, and low-level infrastructure. Maintains open-source security tools the industry relies on, including **Slither** and **Echidna**. Trade-off is price and availability: among the most expensive firms with long queues .
-
-
-
-- **[Quantstamp](https://quantstamp.com/)**  
-
-  One of the earliest dedicated audit firms (since 2017), offering **formal verification** — mathematically proving code behaves as specified — alongside standard manual audits. Premium pricing reflects the highest assurance level for critical logic .
-
-
-
-- **[Halborn](https://www.halborn.com/)**  
-
-  Leans into offensive security: red-teaming, penetration testing, and infrastructure review alongside contract audits. Works with larger exchanges, institutions, and high-value protocols where risk surface extends beyond contracts to servers, keys, and staff .
-
-
-
-- **[Hacken](https://hacken.io/)**  
-
-  Full security stack: code review, penetration testing, bug-bounty platform, and on-chain monitoring across 30+ chains. Operating since 2017, publishes widely cited Web3 security reports. One partner across the entire security lifecycle .
-
-
-
-- **[PeckShield](https://peckshield.com/)**  
-
-  Blockchain security firm specializing in smart contract auditing, threat intelligence, and incident response. Known for rapid post-exploit analysis and public disclosure of attack vectors.
-
-
-
-- **[Immunefi](https://immunefi.com/)**  
-
-  Largest Web3 bug bounty marketplace: 45,000+ researchers, 650+ active programs, and $110M+ paid out. Uses **Vulnerability Severity Classification System V2.2** (impact × privilege × likelihood). Most programs require a working PoC — no PoC means rejection or downgrade .
-
-
-
-## Open-Source GitHub Projects
-
-
-
-- **[MIESC (Multi-layer Intelligent Evaluation for Smart Contracts)](https://pypi.org/project/miesc/)**  
-
-  **The most comprehensive open-source smart contract analysis framework.** Orchestrates **31 security tools across 9 defense layers** — Static, Dynamic, Symbolic, Formal, AI, ML, Threat Modeling, Cross-Chain, and AI Ensemble. Integrates Slither, Aderyn, Mythril, Echidna, Foundry, Certora, Halmos, and SmartLLM. On the SmartBugs-curated dataset (50 contracts), achieves **100% precision, 70% recall, 82.35% F1-score** with zero false positives. AI correlation via local LLM (Ollama) reduces false positives. Compliance mapping for ISO 27001, NIST, OWASP, and SWC. Multiple interfaces: CLI, REST API, WebSocket, MCP, and Web UI. Docker-ready with named profiles (defi, token, security, thorough) .
-
-
-
-- **[Slither](https://github.com/crytic/slither)**  
-
-  Trail of Bits' static analysis framework for Solidity — the industry-standard first-pass detector. Finds reentrancy, access control issues, and dangerous patterns. Underlies many commercial audit workflows .
-
-
-
-- **[Echidna](https://github.com/crytic/echidna)**  
-
-  Trail of Bits' property-based fuzzer for Ethereum contracts. You define invariants and it attempts to falsify them through smart mutation. Standard tool in professional audit pipelines .
-
-
-
-- **[Medusa](https://github.com/crytic/medusa)**  
-
-  Cross-platform, Go-ethereum-based fuzzer inspired by Echidna. **Parallelized fuzz testing** across multiple workers with coverage-guided mutation. Provides CLI and Go API for custom testing methodology. Successor lineage to Echidna .
-
-
-
-- **[Halmos](https://github.com/a16z/halmos)**  
-
-  a16z's symbolic testing tool that **reuses existing Foundry tests** as formal specifications. Makes symbolic execution accessible to developers already writing Foundry tests .
-
-
-
-- **[Kontrol](https://github.com/runtimeverification/kontrol)**  
-
-  Runtime Verification's formal verification tool that integrates with Foundry, allowing developers to write formal specifications as Foundry tests in Solidity. Built on **KEVM** (validated formal semantics of EVM bytecode), providing mathematical guarantees that verified contracts behave identically when executed. Open source under BSD-3 Clause. CI integration and Kontrol as a Service (KaaS) for cloud verification .
-
-
-
-- **[hevm](https://github.com/dapphub/dapptools/tree/master/src/hevm)**  
-
-  State-of-the-art symbolic and concrete EVM execution engine. Performs symbolic execution and **equivalence checking** between contracts. CLI tool for security researchers .
-
-
-
-- **[Aderyn](https://github.com/Cyfrin/aderyn)**  
-
-  Cyfrin's **Rust-based Solidity static analyzer** designed to help protocol engineers and security researchers find vulnerabilities. Community-driven with VSCode extension .
-
-
-
-- **[ESBMC](https://esbmc.github.io/)**  
-
-  Mature, permissively licensed SMT-based bounded model checker supporting Solidity alongside C, C++, CUDA, Python, and Rust. **Automatically detects or proves absence of runtime errors** (bounds checks, pointer safety, overflow) and verifies user-defined assertions. Used to verify Solidity smart contracts handling millions of dollars .
-
-
-
-- **[Isabelle/Solidity](https://zenodo.org/records/15121526)**  
-
-  Academic formal verification tool implemented as a definitional extension for the Isabelle proof assistant. Complements axiomatic approaches by providing a foundational framework. Funded by UK Research and Innovation (EP/X027619/1) .
-
-
-
-- **[AI Smart Contract Auditor](https://pypi.org/project/ai-smart-contract-auditor/)**  
-
-  AI-powered audit system with a **vulnerability database of 47,294 findings** and **305,943 PoCs** aggregated from Sherlock, Solodit, DeFiHackLabs, and Web3Bugs. ChromaDB vector search with 14,291 semantic embeddings. **17.7x parallel speedup**, 97.5% audit success rate, 2–5 minute average audit per contract. Generates PoCs 15x faster than manual. 621 tests with 100% pass rate. MIT licensed .
-
-
-
-- **[AW3SS (Automated Web3 Security Scanner)](https://pypi.org/project/aw3ss/)**  
-
-  Enterprise-grade autonomous security framework with **1,015 indexed exploit templates** in a vector RAG knowledge base. Multi-chain native RPC routing with deterministic mainnet forking (Ethereum, Arbitrum, Base, Polygon, BSC, Optimism, Cronos, Flare). **8 formal invariant assertions** covering CRITICAL to LOW severity. Self-healing PoC engine with 3 retries and temperature-controlled adjustments. Docker Foundry sandbox with `--cap-drop=ALL` hardening. Outputs SARIF v2.1.0 and Markdown audit reports ready for Code4rena, Sherlock, and Immunefi submission .
-
-
-
-### Additional Strong Open-Source Options
-
-
-
-- **[SmartBugs](https://github.com/smartbugs/smartbugs)** — Execution framework for analyzing Solidity contracts with multiple analysis tools. Foundation dataset used by MIESC validation .
-
-- **[Solodit](https://solodit.xyz/)** — Aggregates audit findings across firms, searchable by vulnerability class. Essential pattern-mining resource .
-
-- **[Trail of Bits building-secure-contracts](https://github.com/crytic/building-secure-contracts)** — Educational resource with vulnerability patterns, checklists, and development guidelines.
-
-- **[EVM Fuzz (spamoor)](https://pkg.go.dev/github.com/ethpandaops/spamoor)** — Deploys randomly generated bytecode to find consensus bugs and stress-test EVM implementations. Stack-aware bytecode generation, weighted opcode selection, and precompile testing .
-
-- **[kevm](https://github.com/runtimeverification/evm-semantics)** — K framework formal semantics of EVM bytecode, the foundation for Kontrol's verification guarantees .
-
-
-
-**Frameworks for building custom systems**: Combine **MIESC** for multi-layer orchestration across 31 tools, **Slither** and **Aderyn** for static analysis, **Echidna** or **Medusa** for property-based fuzzing, **Halmos** or **Kontrol** for formal verification, and **AW3SS** for autonomous PoC generation to build a complete self-hosted smart contract verification stack.
-
-
-
-## How to Contribute
-
-
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
-
-## Disclaimer
-
-
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- Smart contract verification tools must comply with applicable laws, exchange listing requirements, and security best practices. **No tool or audit guarantees complete safety** — defense in depth, bug bounties, and runtime monitoring are essential complements.
-
-- Self-hosted open-source solutions require proper security hardening, regular updates, and validation against known vulnerability datasets.
-
-
+<p align="center">
+  <img src="assets/banner.svg" alt="Awesome Smart Contract Flaw Verification Tools" width="100%" />
+</p>
+
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
+  <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square" alt="License: MIT" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Smart-Contract-Flaw-Verification-Tools/pulls"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Smart-Contract-Flaw-Verification-Tools/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Smart-Contract-Flaw-Verification-Tools?style=flat-square" alt="GitHub stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Smart-Contract-Flaw-Verification-Tools/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Smart-Contract-Flaw-Verification-Tools?style=flat-square" alt="GitHub forks" /></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
 
 ---
 
+# 🛡️ Awesome Smart Contract Flaw Verification Tools
 
+> 🔍 **A comprehensive, SEO-optimized curated directory of enterprise SaaS platforms, automated vulnerability scanners, formal verification engines, fuzzers, and open-source static analyzers for Ethereum (EVM) and multi-chain smart contracts.**
 
-**Made for smart contract auditors, DeFi developers, security researchers, and teams building Web3 verification platforms.**  
+Smart contract vulnerabilities cost the Web3 ecosystem billions in lost capital annually. Flaw verification bridges automated compiler checks, formal mathematical proofs, static abstract interpretation, property-based fuzz testing, and continuous runtime exploit monitoring to uncover reentrancy, access control bypasses, integer flaws, and business-logic bugs before deployment.
 
-Let's make smart contract flaw verification more open, rigorous, and accessible.
+---
+
+## 📑 Table of Contents
+
+- [🌐 Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
+- [🏢 SaaS & Hosted Security Platforms](#-saas--hosted-security-platforms)
+- [🔓 Open-Source Verification Projects](#-open-source-verification-projects)
+- [🧠 Verification Methodologies & Tool Taxonomy](#-verification-methodologies--tool-taxonomy)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [📈 Star History](#-star-history)
+- [☕ Support & Community](#-support--community)
+- [⚖️ Disclaimer](#️-disclaimer)
+
+---
+
+## 🌐 Sector Overview & Market Dynamics
+
+The global smart contract security, auditing, and flaw verification market is currently valued between **$2.6 billion and $3.4 billion**, with industry projections forecasting rapid growth to over **$7.5 billion by 2030** (advancing at a CAGR of ~25%–30%). This surge is catalyzed by institutional real-world asset (RWA) tokenization, stricter global regulatory regimes such as the European Union's MiCA framework, and the critical need to protect hundreds of billions in decentralized finance (DeFi) total value locked (TVL).
+
+Rather than functioning as a "winner-take-all" monopolistic arena, the sector remains **moderately to highly fragmented**. High-stakes protocols and Web3 enterprises deliberately avoid single-vendor dependency. Instead, security teams employ defense-in-depth strategies combining multiple independent manual audit firms, automated CI/CD static scanners, continuous fuzzing pipelines, crowdsourced whitehat bug bounty networks (such as Immunefi and Sherlock), and decentralized runtime telemetry feeds.
+
+---
+
+## 🏢 SaaS & Hosted Security Platforms
+
+The following hosted solutions provide automated continuous scanning, bug bounty orchestration, managed formal verification, and manual code audits. Platforms are sorted **descending by company size** (market valuation and annual recurring revenue).
+
+| 🏢 Platform | 📊 Company Size (Valuation / ARR) | 💳 Starting Tier Pricing | 🎁 Free Tier Limits | 🛡️ Key Capabilities & Focus |
+| :--- | :--- | :--- | :--- | :--- |
+| **[ConsenSys Diligence](https://diligence.security/)** | **$7.0 Billion Valuation** (~$150M ARR) | **$300/month** (Builder Fuzzing SaaS; manual audits from $30,000) | **Explorer Plan ($0 forever)**: 100 fuzzing campaigns/month with a 5-minute maximum execution time per campaign | Fuzzing-as-a-Service (FaaS) for Solidity/Foundry contracts, automated invariant testing, and tier-1 Ethereum manual audit advisory. |
+| **[CertiK](https://www.certik.com/)** | **$2.0 Billion Valuation** (~$90M ARR) | **$500/month** (Skynet Pro SaaS; manual audits from $8,000 for standard ERC-20s) | **Community Explorer ($0 forever)**: Unlimited public access to Skynet project security leaderboards, risk radar, and token scam alerts (0 free manual audits) | On-chain runtime monitoring (Skynet), formal verification, high-volume audits, KYC team verification, and exchange listing compliance. |
+| **[Immunefi](https://immunefi.com/)** | **$500 Million Valuation** (~$20M ARR) | **10% payout commission** on open bounty payouts, or **$15,000/year** flat BBP subscription | **Researcher & Open Directory ($0 forever)**: Free project browsing, 650+ bug bounties, vulnerability submissions, and self-managed open bounty listing ($0 upfront listing fee) | Premier Web3 bug bounty marketplace with $110M+ paid out, managed vulnerability triage, and V2.2 severity classification standard. |
+| **[Halborn](https://www.halborn.com/)** | **$300M – $500M Valuation** (~$10M+ ARR) | **$40,000** starting engagement fee for single-contract security audits ($100,000+ for multi-contract protocols) | **Free 30-Minute Threat Modeling Review**: Complimentary introductory architectural risk consultation & free public advisory reports (0 free manual audits) | Offensive security, Layer 1 protocol audits, full-stack penetration testing, and continuous DevSecOps advisory. |
+| **[OpenZeppelin](https://www.openzeppelin.com/)** | **$150M – $250M Valuation** (Acquired by S&P Global; $12.7M ARR) | **$500/month** (historical Defender Team plan; custom enterprise audits start at $30,000) | **Community Tier ($0 forever)**: 5 smart contracts monitored, 1 user seat, 20 sentinels, 500 watched transactions/hour, and free open-source contract libraries (0 free manual audits) | Industry reference EVM audits, automated operational security (Defender), automated relayers, and secure upgrade governance. |
+| **[Quantstamp](https://quantstamp.com/)** | **$100M – $150M Valuation** (~$18M ARR) | **$14,000** starting tier for token & small contract audits ($42,000–$50,000 for standard DeFi protocols) | **Free Pre-Audit Structural Scan**: Complimentary automated codebase parsing and scoping intake assessment (0 free formal verification audits) | Mathematical formal verification, protocol logic proofs, Layer-1/Layer-2 audits, and white-glove security advisory. |
+| **[Trail of Bits](https://www.trailofbits.com/)** | **$100M – $120M Valuation** (~$15.6M ARR) | **$25,000/engineer-week** (typical audit engagements start at $40,000–$50,000 for 1–2 weeks) | **Free Open-Source Security Suite ($0 forever)**: 100% free unlimited access to industry-standard tools (Slither, Echidna, Medusa) (0 free proprietary manual audit days) | Boutique research firm specializing in zero-knowledge (ZK) circuits, novel cryptographic primitives, compilers, and low-level execution engines. |
+| **[Hacken](https://hacken.io/)** | **$80M – $120M Valuation** (~$12M ARR) | **$5,000** starting tier for ERC-20 / basic token contract audits ($10,000–$25,000 for DeFi vaults) | **Free Community Tier ($0 forever)**: CER.live exchange & token security ratings, HackenProof whitehat portal, and 15-minute scoping triage (0 free manual audits) | Dual-pass manual audits, crowdsourced vulnerability programs (HackenProof), on-chain threat monitoring, and tokenomics validation. |
+| **[PeckShield](https://peckshield.com/)** | **$50M – $80M Valuation** (~$10M ARR) | **$5,000** entry price for simple contract checks ($20,000–$60,000 for standard DeFi systems) | **Community Threat Feed ($0 forever)**: Free real-time PeckShieldAlert Telegram channel, exploit post-mortems, and scam/drainer notices (0 free manual audits) | Rapid post-exploit threat intelligence, DeFi security audits, exchange monitoring, and attack vector forensics. |
+| **[SolidityScan](https://solidityscan.com/)** | **$15M – $25M Valuation** (~$2M ARR) | **$199.99/month** (Individual tier up to 8,000 LOC) or **$29.99** per on-demand scan | **Free Trial (2 Scans / $0)**: 2 free automated vulnerability scans upon registration for contracts up to 1,000 LOC each | Cloud-native automated static analysis scanner with 160+ vulnerability detectors, CI/CD integrations, and instant web reports. |
+
+---
+
+## 🔓 Open-Source Verification Projects
+
+A curated collection of self-hosted, open-source static analyzers, formal verification engines, property-based fuzzers, and bytecode evaluators. Sorted **descending by GitHub star count**.
+
+* **[OpenZeppelin Contracts](https://github.com/OpenZeppelin/openzeppelin-contracts)** [![GitHub stars](https://img.shields.io/github/stars/OpenZeppelin/openzeppelin-contracts?style=social&color=white)](https://github.com/OpenZeppelin/openzeppelin-contracts/stargazers)  
+  The gold standard library for secure, audited Solidity development. Powers standard implementations for ERC-20, ERC-721, ERC-1155, access control (Ownable, AccessControl), reentrancy guards, and upgradeable contracts.
+
+* **[Foundry](https://github.com/foundry-rs/foundry)** [![GitHub stars](https://img.shields.io/github/stars/foundry-rs/foundry?style=social&color=white)](https://github.com/foundry-rs/foundry/stargazers)  
+  Blazingly fast, portable, and modular Ethereum development and testing framework written in Rust. Features native property fuzzing, symbolic execution hooks, differential testing, and gas profiling via `forge`, `cast`, and `anvil`.
+
+* **[Slither](https://github.com/crytic/slither)** [![GitHub stars](https://img.shields.io/github/stars/crytic/slither?style=social&color=white)](https://github.com/crytic/slither/stargazers)  
+  Trail of Bits' industry-standard static analysis framework for Solidity. Converts Solidity AST to intermediate representation (SlithIR) to run 80+ detectors flagging reentrancy, uninitialized state, and authorization flaws with near-instant speed.
+
+* **[Mythril](https://github.com/ConsenSysDiligence/mythril)** [![GitHub stars](https://img.shields.io/github/stars/ConsenSysDiligence/mythril?style=social&color=white)](https://github.com/ConsenSysDiligence/mythril/stargazers)  
+  ConsenSys Diligence's symbolic execution and concolic analysis security scanner for EVM bytecode. Discovers edge-case vulnerabilities by generating constraint models using the Z3 SMT solver.
+
+* **[Manticore](https://github.com/trailofbits/manticore)** [![GitHub stars](https://img.shields.io/github/stars/trailofbits/manticore?style=social&color=white)](https://github.com/trailofbits/manticore/stargazers)  
+  Symbolic execution tool for the analysis of smart contracts and binaries by Trail of Bits. Explores contract state spaces symbolically to mathematically verify invariants and uncover complex execution paths.
+
+* **[Echidna](https://github.com/crytic/echidna)** [![GitHub stars](https://img.shields.io/github/stars/crytic/echidna?style=social&color=white)](https://github.com/crytic/echidna/stargazers)  
+  Trail of Bits' property-based fuzzer for Ethereum smart contracts. Uses grammar-based mutation and coverage feedback to falsify user-defined invariants and break protocol assumptions.
+
+* **[Building Secure Contracts](https://github.com/crytic/building-secure-contracts)** [![GitHub stars](https://img.shields.io/github/stars/crytic/building-secure-contracts?style=social&color=white)](https://github.com/crytic/building-secure-contracts/stargazers)  
+  Trail of Bits' definitive repository of security guidelines, common vulnerability checklists, testing recipes, and static analysis configurations for Web3 engineers.
+
+* **[hevm (dapptools)](https://github.com/dapphub/dapptools)** [![GitHub stars](https://img.shields.io/github/stars/dapphub/dapptools?style=social&color=white)](https://github.com/dapphub/dapptools/stargazers)  
+  EVM implementation specifically crafted for symbolic execution, property testing, and contract equivalence verification. Serves as a foundation for formal EVM semantic checking.
+
+* **[Weird ERC20 Tokens](https://github.com/d-xo/weird-erc20)** [![GitHub stars](https://img.shields.io/github/stars/d-xo/weird-erc20?style=social&color=white)](https://github.com/d-xo/weird-erc20/stargazers)  
+  Comprehensive catalog of non-standard ERC-20 token behaviors (rebasing tokens, fee-on-transfer, missing return values, flash-mintable) that frequently cause critical security bugs in DeFi protocols.
+
+* **[EVM Opcodes](https://github.com/crytic/evm-opcodes)** [![GitHub stars](https://img.shields.io/github/stars/crytic/evm-opcodes?style=social&color=white)](https://github.com/crytic/evm-opcodes/stargazers)  
+  Interactive and detailed technical reference of Ethereum Virtual Machine (EVM) opcodes, execution gas costs, and memory/stack layouts maintained by Crytic.
+
+* **[Surya](https://github.com/ConsenSysDiligence/surya)** [![GitHub stars](https://img.shields.io/github/stars/ConsenSysDiligence/surya?style=social&color=white)](https://github.com/ConsenSysDiligence/surya/stargazers)  
+  ConsenSys Diligence's architectural exploration and visualization utility. Generates function call graphs, inheritance trees, control flows, and contract interaction matrices for smart contract audits.
+
+* **[Solhint](https://github.com/protofire/solhint)** [![GitHub stars](https://img.shields.io/github/stars/protofire/solhint?style=social&color=white)](https://github.com/protofire/solhint/stargazers)  
+  Open-source Solidity linter providing automated style guide rules and security vulnerability warnings (such as dangerous assembly usage, tx.origin, and reentrancy anti-patterns).
+
+* **[Halmos](https://github.com/a16z/halmos)** [![GitHub stars](https://img.shields.io/github/stars/a16z/halmos?style=social&color=white)](https://github.com/a16z/halmos/stargazers)  
+  a16z's symbolic testing tool that directly consumes standard Foundry unit tests as formal mathematical specifications. Translates EVM bytecode into Z3 logic formulas without learning a separate specification language.
+
+* **[Solgraph](https://github.com/raineorshine/solgraph)** [![GitHub stars](https://img.shields.io/github/stars/raineorshine/solgraph?style=social&color=white)](https://github.com/raineorshine/solgraph/stargazers)  
+  Generates DOT visual graphs of Solidity contract control flow, visually highlighting functions with state mutability vulnerabilities and untrusted external calls.
+
+* **[solc-select](https://github.com/crytic/solc-select)** [![GitHub stars](https://img.shields.io/github/stars/crytic/solc-select?style=social&color=white)](https://github.com/crytic/solc-select/stargazers)  
+  CLI tool to instantly switch between any historical or cutting-edge Solidity compiler version without manual compilation. An essential asset for running legacy smart contract verification suites.
+
+* **[Aderyn](https://github.com/Cyfrin/aderyn)** [![GitHub stars](https://img.shields.io/github/stars/Cyfrin/aderyn?style=social&color=white)](https://github.com/Cyfrin/aderyn/stargazers)  
+  Cyfrin's ultra-fast Rust-based Solidity static analyzer. Traverses the Abstract Syntax Tree (AST) to uncover protocol-level anti-patterns, security vulnerabilities, and gas inefficiencies.
+
+* **[SmartBugs](https://github.com/smartbugs/smartbugs)** [![GitHub stars](https://img.shields.io/github/stars/smartbugs/smartbugs?style=social&color=white)](https://github.com/smartbugs/smartbugs/stargazers)  
+  Reproducible execution and benchmarking framework that orchestrates multiple smart contract analysis tools (including Slither, Mythril, HoneyBadger, and Oyente) across curated datasets.
+
+* **[Securify2](https://github.com/eth-sri/securify2)** [![GitHub stars](https://img.shields.io/github/stars/eth-sri/securify2?style=social&color=white)](https://github.com/eth-sri/securify2/stargazers)  
+  Security scanner for Ethereum smart contracts developed by the ICE Center at ETH Zurich. Utilizes Datalog semantic patterns to rigorously prove compliance against severe vulnerability classes.
+
+* **[KEVM (EVM Semantics)](https://github.com/runtimeverification/evm-semantics)** [![GitHub stars](https://img.shields.io/github/stars/runtimeverification/evm-semantics?style=social&color=white)](https://github.com/runtimeverification/evm-semantics/stargazers)  
+  Formal, mathematically validated specification of Ethereum Virtual Machine (EVM) bytecode written in the K Framework. Forms the theoretical foundation for high-assurance formal verification.
+
+* **[ESBMC](https://github.com/esbmc/esbmc)** [![GitHub stars](https://img.shields.io/github/stars/esbmc/esbmc?style=social&color=white)](https://github.com/esbmc/esbmc/stargazers)  
+  Permissively licensed SMT-based bounded model checker supporting Solidity. Mathematically proves the absence of runtime bugs (overflows, memory corruption, bounds violations) and verifies user-defined assertions.
+
+* **[Medusa](https://github.com/crytic/medusa)** [![GitHub stars](https://img.shields.io/github/stars/crytic/medusa?style=social&color=white)](https://github.com/crytic/medusa/stargazers)  
+  Cross-platform, Go-ethereum-based fuzzer inspired by Echidna. Features parallelized fuzz testing across multiple workers with coverage-guided mutation and custom testing APIs.
+
+* **[pyevmasm](https://github.com/crytic/pyevmasm)** [![GitHub stars](https://img.shields.io/github/stars/crytic/pyevmasm?style=social&color=white)](https://github.com/crytic/pyevmasm/stargazers)  
+  Python EVM Assembler and Disassembler with CLI and library support. Used by security auditors to inspect and mutate raw contract bytecode.
+
+* **[Scribble](https://github.com/ConsenSysDiligence/scribble)** [![GitHub stars](https://img.shields.io/github/stars/ConsenSysDiligence/scribble?style=social&color=white)](https://github.com/ConsenSysDiligence/scribble/stargazers)  
+  ConsenSys Diligence's specification language and instrumentation tool that transforms high-level contract specifications into concrete runtime assertions directly inside Solidity code.
+
+* **[Kontrol](https://github.com/runtimeverification/kontrol)** [![GitHub stars](https://img.shields.io/github/stars/runtimeverification/kontrol?style=social&color=white)](https://github.com/runtimeverification/kontrol/stargazers)  
+  Runtime Verification's formal verification engine integrating Foundry tests with KEVM. Mathematically proves that EVM bytecode executions adhere strictly to formal specifications.
+
+* **[EVM Fuzz (Spamoor)](https://github.com/ethpandaops/spamoor)** [![GitHub stars](https://img.shields.io/github/stars/ethpandaops/spamoor?style=social&color=white)](https://github.com/ethpandaops/spamoor/stargazers)  
+  Spams randomly generated EVM bytecode onto chains to uncover consensus bugs, client crashes, and opcode edge-case regressions under extreme stress loads.
+
+* **[AI Smart Contract Auditor](https://github.com/iktok90-design/ai-smart-contract-auditor)** [![GitHub stars](https://img.shields.io/github/stars/iktok90-design/ai-smart-contract-auditor?style=social&color=white)](https://github.com/iktok90-design/ai-smart-contract-auditor/stargazers)  
+  AI-augmented auditing engine backed by a database of 47,000+ historical audit findings and 300,000+ PoCs. Employs ChromaDB vector search to synthesize automated exploit proofs.
+
+* **[MIESC](https://github.com/fboiero/MIESC)** [![GitHub stars](https://img.shields.io/github/stars/fboiero/MIESC?style=social&color=white)](https://github.com/fboiero/MIESC/stargazers)  
+  Multi-layer Intelligent Evaluation for Smart Contracts orchestrating 30+ security tools across 9 defense layers (Static, Dynamic, Symbolic, Formal, AI, Threat Modeling, and Ensembles).
+
+---
+
+## 🧠 Verification Methodologies & Tool Taxonomy
+
+| 🔬 Methodology | 🎯 Primary Objective | ⚡ Representative Tools | 💡 Key Strengths & Trade-offs |
+| :--- | :--- | :--- | :--- |
+| **Static Analysis** | Scan AST & control flow for known anti-patterns without executing code. | **Slither**, **Aderyn**, **Solhint**, **SolidityScan** | 🟢 Extremely fast; zero runtime setup.<br>🔴 Higher false-positive rates; blind to dynamic state bugs. |
+| **Property-Based Fuzzing** | Generate millions of pseudo-random inputs to break contract invariants. | **Foundry (`forge test`)**, **Echidna**, **Medusa** | 🟢 Discovers unexpected edge cases and state sequences.<br>🔴 Requires writing precise invariants; cannot prove complete absence of bugs. |
+| **Symbolic Execution** | Evaluate code using algebraic symbols and SMT solvers to test all possible execution paths. | **Mythril**, **Halmos**, **Manticore**, **hevm** | 🟢 Mathematical verification of path reaches; generates reproducible PoCs.<br>🔴 Susceptible to state-space explosion on deep loops. |
+| **Formal Verification** | Mathematically prove contract behavior satisfies a formal specification. | **Kontrol (KEVM)**, **ESBMC**, **Quantstamp** | 🟢 Absolute mathematical certainty against modeled properties.<br>🔴 Computationally expensive; requires high specification expertise. |
+| **Runtime Monitoring** | Inspect live transactions and block state to intercept exploits in flight. | **CertiK Skynet**, **OpenZeppelin Defender**, **PeckShieldAlert** | 🟢 Protects already-deployed protocols; triggers automated pauses.<br>🔴 Cannot fix vulnerable contract bytecode post-deployment. |
+
+---
+
+## 🤝 How to Contribute
+
+Contributions are welcome from the entire Web3 and cybersecurity community! To suggest a new tool or update an existing entry:
+
+1. 🍴 **Fork the repository** to your GitHub account.
+2. 🌿 **Create a feature branch** (`git checkout -b feature/add-new-verification-tool`).
+3. ✍️ **Update `README.md`**:
+   - Follow the existing tabular structure for SaaS tools (include valuation/ARR, specific starting price, and concrete free tier limits).
+   - For open-source tools, include the repository URL, stargazers social badge, and place it in the correct position according to star count.
+4. 🚀 **Commit your changes** with a clear message (`git commit -m 'feat: add NewTool to open-source verification list'`).
+5. 📬 **Submit a Pull Request** describing the platform's verification methodology and features.
+
+---
+
+## 📈 Star History
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Smart-Contract-Flaw-Verification-Tools&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Smart-Contract-Flaw-Verification-Tools&&type=date&legend=top-left)
+
+---
+
+## ☕ Support & Community
+
+Thank you for visiting **Awesome Smart Contract Flaw Verification Tools**! If this repository has helped your security research, protocol audit workflow, or smart contract development:
+
+- ⭐ **Star this repository** to help other developers discover it!
+- 🍴 **Fork and share** it with your security team and Web3 community.
+- 💬 **Join our community on [Discord](https://discord.gg/jc4xtF58Ve)** to discuss smart contract security findings, zero-day research, and verification frameworks.
+- ☕ **Support the maintainer**: Buy a coffee or sponsor ongoing maintenance via the [GitHub Sponsors Dashboard](https://github.com/sponsors/ishandutta2007).
+
+Your support enables continuous curation and updates for the global decentralized security ecosystem! 💙
+
+---
+
+## ⚖️ Disclaimer
+
+- This directory is a **community-curated educational resource** — inclusion of any platform or tool does not constitute an endorsement, warranty, or security guarantee.
+- Smart contracts operate in hostile, non-custodial environments. **No single audit or verification tool guarantees 100% exploit immunity**. True security requires a defense-in-depth posture comprising static analysis, invariant fuzzing, formal proofs, external human audits, multi-sig governance, and bug bounties.
+- Always perform comprehensive local testing and independent reviews prior to deploying smart contracts handling user funds to public mainnets.
