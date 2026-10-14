@@ -7,7 +7,7 @@
   <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square" alt="License: MIT" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Smart-Contract-Flaw-Verification-Tools/pulls"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Smart-Contract-Flaw-Verification-Tools/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Smart-Contract-Flaw-Verification-Tools?style=flat-square" alt="GitHub stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Smart-Contract-Flaw-Verification-Tools/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Smart-Contract-Flaw-Verification-Tools?style=flat-square" alt="GitHub_Stars" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Smart-Contract-Flaw-Verification-Tools/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Smart-Contract-Flaw-Verification-Tools?style=flat-square" alt="GitHub forks" /></a>
   <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
 </p>
@@ -64,87 +64,87 @@ The following hosted solutions provide automated continuous scanning, bug bounty
 
 ## 🔓 Open-Source Verification Projects
 
-A curated collection of self-hosted, open-source static analyzers, formal verification engines, property-based fuzzers, and bytecode evaluators. Sorted **descending by GitHub star count**.
+A curated collection of self-hosted, open-source static analyzers, formal verification engines, property-based fuzzers, and bytecode evaluators. Sorted **descending by GitHub Stars_Count**.
 
-* **[OpenZeppelin Contracts](https://github.com/OpenZeppelin/openzeppelin-contracts)** [![GitHub stars](https://img.shields.io/github/stars/OpenZeppelin/openzeppelin-contracts?style=social&color=white)](https://github.com/OpenZeppelin/openzeppelin-contracts/stargazers)  
+* **[OpenZeppelin Contracts](https://github.com/OpenZeppelin/openzeppelin-contracts)** [![GitHub_Stars](https://img.shields.io/github/stars/OpenZeppelin/openzeppelin-contracts?style=social&color=white)](https://github.com/OpenZeppelin/openzeppelin-contracts/stargazers)  
   The gold standard library for secure, audited Solidity development. Powers standard implementations for ERC-20, ERC-721, ERC-1155, access control (Ownable, AccessControl), reentrancy guards, and upgradeable contracts.
 
-* **[Foundry](https://github.com/foundry-rs/foundry)** [![GitHub stars](https://img.shields.io/github/stars/foundry-rs/foundry?style=social&color=white)](https://github.com/foundry-rs/foundry/stargazers)  
+* **[Foundry](https://github.com/foundry-rs/foundry)** [![GitHub_Stars](https://img.shields.io/github/stars/foundry-rs/foundry?style=social&color=white)](https://github.com/foundry-rs/foundry/stargazers)  
   Blazingly fast, portable, and modular Ethereum development and testing framework written in Rust. Features native property fuzzing, symbolic execution hooks, differential testing, and gas profiling via `forge`, `cast`, and `anvil`.
 
-* **[Slither](https://github.com/crytic/slither)** [![GitHub stars](https://img.shields.io/github/stars/crytic/slither?style=social&color=white)](https://github.com/crytic/slither/stargazers)  
+* **[Slither](https://github.com/crytic/slither)** [![GitHub_Stars](https://img.shields.io/github/stars/crytic/slither?style=social&color=white)](https://github.com/crytic/slither/stargazers)  
   Trail of Bits' industry-standard static analysis framework for Solidity. Converts Solidity AST to intermediate representation (SlithIR) to run 80+ detectors flagging reentrancy, uninitialized state, and authorization flaws with near-instant speed.
 
-* **[Mythril](https://github.com/ConsenSysDiligence/mythril)** [![GitHub stars](https://img.shields.io/github/stars/ConsenSysDiligence/mythril?style=social&color=white)](https://github.com/ConsenSysDiligence/mythril/stargazers)  
+* **[Mythril](https://github.com/ConsenSysDiligence/mythril)** [![GitHub_Stars](https://img.shields.io/github/stars/ConsenSysDiligence/mythril?style=social&color=white)](https://github.com/ConsenSysDiligence/mythril/stargazers)  
   ConsenSys Diligence's symbolic execution and concolic analysis security scanner for EVM bytecode. Discovers edge-case vulnerabilities by generating constraint models using the Z3 SMT solver.
 
-* **[Manticore](https://github.com/trailofbits/manticore)** [![GitHub stars](https://img.shields.io/github/stars/trailofbits/manticore?style=social&color=white)](https://github.com/trailofbits/manticore/stargazers)  
+* **[Manticore](https://github.com/trailofbits/manticore)** [![GitHub_Stars](https://img.shields.io/github/stars/trailofbits/manticore?style=social&color=white)](https://github.com/trailofbits/manticore/stargazers)  
   Symbolic execution tool for the analysis of smart contracts and binaries by Trail of Bits. Explores contract state spaces symbolically to mathematically verify invariants and uncover complex execution paths.
 
-* **[Echidna](https://github.com/crytic/echidna)** [![GitHub stars](https://img.shields.io/github/stars/crytic/echidna?style=social&color=white)](https://github.com/crytic/echidna/stargazers)  
+* **[Echidna](https://github.com/crytic/echidna)** [![GitHub_Stars](https://img.shields.io/github/stars/crytic/echidna?style=social&color=white)](https://github.com/crytic/echidna/stargazers)  
   Trail of Bits' property-based fuzzer for Ethereum smart contracts. Uses grammar-based mutation and coverage feedback to falsify user-defined invariants and break protocol assumptions.
 
-* **[Building Secure Contracts](https://github.com/crytic/building-secure-contracts)** [![GitHub stars](https://img.shields.io/github/stars/crytic/building-secure-contracts?style=social&color=white)](https://github.com/crytic/building-secure-contracts/stargazers)  
+* **[Building Secure Contracts](https://github.com/crytic/building-secure-contracts)** [![GitHub_Stars](https://img.shields.io/github/stars/crytic/building-secure-contracts?style=social&color=white)](https://github.com/crytic/building-secure-contracts/stargazers)  
   Trail of Bits' definitive repository of security guidelines, common vulnerability checklists, testing recipes, and static analysis configurations for Web3 engineers.
 
-* **[hevm (dapptools)](https://github.com/dapphub/dapptools)** [![GitHub stars](https://img.shields.io/github/stars/dapphub/dapptools?style=social&color=white)](https://github.com/dapphub/dapptools/stargazers)  
+* **[hevm (dapptools)](https://github.com/dapphub/dapptools)** [![GitHub_Stars](https://img.shields.io/github/stars/dapphub/dapptools?style=social&color=white)](https://github.com/dapphub/dapptools/stargazers)  
   EVM implementation specifically crafted for symbolic execution, property testing, and contract equivalence verification. Serves as a foundation for formal EVM semantic checking.
 
-* **[Weird ERC20 Tokens](https://github.com/d-xo/weird-erc20)** [![GitHub stars](https://img.shields.io/github/stars/d-xo/weird-erc20?style=social&color=white)](https://github.com/d-xo/weird-erc20/stargazers)  
+* **[Weird ERC20 Tokens](https://github.com/d-xo/weird-erc20)** [![GitHub_Stars](https://img.shields.io/github/stars/d-xo/weird-erc20?style=social&color=white)](https://github.com/d-xo/weird-erc20/stargazers)  
   Comprehensive catalog of non-standard ERC-20 token behaviors (rebasing tokens, fee-on-transfer, missing return values, flash-mintable) that frequently cause critical security bugs in DeFi protocols.
 
-* **[EVM Opcodes](https://github.com/crytic/evm-opcodes)** [![GitHub stars](https://img.shields.io/github/stars/crytic/evm-opcodes?style=social&color=white)](https://github.com/crytic/evm-opcodes/stargazers)  
+* **[EVM Opcodes](https://github.com/crytic/evm-opcodes)** [![GitHub_Stars](https://img.shields.io/github/stars/crytic/evm-opcodes?style=social&color=white)](https://github.com/crytic/evm-opcodes/stargazers)  
   Interactive and detailed technical reference of Ethereum Virtual Machine (EVM) opcodes, execution gas costs, and memory/stack layouts maintained by Crytic.
 
-* **[Surya](https://github.com/ConsenSysDiligence/surya)** [![GitHub stars](https://img.shields.io/github/stars/ConsenSysDiligence/surya?style=social&color=white)](https://github.com/ConsenSysDiligence/surya/stargazers)  
+* **[Surya](https://github.com/ConsenSysDiligence/surya)** [![GitHub_Stars](https://img.shields.io/github/stars/ConsenSysDiligence/surya?style=social&color=white)](https://github.com/ConsenSysDiligence/surya/stargazers)  
   ConsenSys Diligence's architectural exploration and visualization utility. Generates function call graphs, inheritance trees, control flows, and contract interaction matrices for smart contract audits.
 
-* **[Solhint](https://github.com/protofire/solhint)** [![GitHub stars](https://img.shields.io/github/stars/protofire/solhint?style=social&color=white)](https://github.com/protofire/solhint/stargazers)  
+* **[Solhint](https://github.com/protofire/solhint)** [![GitHub_Stars](https://img.shields.io/github/stars/protofire/solhint?style=social&color=white)](https://github.com/protofire/solhint/stargazers)  
   Open-source Solidity linter providing automated style guide rules and security vulnerability warnings (such as dangerous assembly usage, tx.origin, and reentrancy anti-patterns).
 
-* **[Halmos](https://github.com/a16z/halmos)** [![GitHub stars](https://img.shields.io/github/stars/a16z/halmos?style=social&color=white)](https://github.com/a16z/halmos/stargazers)  
+* **[Halmos](https://github.com/a16z/halmos)** [![GitHub_Stars](https://img.shields.io/github/stars/a16z/halmos?style=social&color=white)](https://github.com/a16z/halmos/stargazers)  
   a16z's symbolic testing tool that directly consumes standard Foundry unit tests as formal mathematical specifications. Translates EVM bytecode into Z3 logic formulas without learning a separate specification language.
 
-* **[Solgraph](https://github.com/raineorshine/solgraph)** [![GitHub stars](https://img.shields.io/github/stars/raineorshine/solgraph?style=social&color=white)](https://github.com/raineorshine/solgraph/stargazers)  
+* **[Solgraph](https://github.com/raineorshine/solgraph)** [![GitHub_Stars](https://img.shields.io/github/stars/raineorshine/solgraph?style=social&color=white)](https://github.com/raineorshine/solgraph/stargazers)  
   Generates DOT visual graphs of Solidity contract control flow, visually highlighting functions with state mutability vulnerabilities and untrusted external calls.
 
-* **[solc-select](https://github.com/crytic/solc-select)** [![GitHub stars](https://img.shields.io/github/stars/crytic/solc-select?style=social&color=white)](https://github.com/crytic/solc-select/stargazers)  
+* **[solc-select](https://github.com/crytic/solc-select)** [![GitHub_Stars](https://img.shields.io/github/stars/crytic/solc-select?style=social&color=white)](https://github.com/crytic/solc-select/stargazers)  
   CLI tool to instantly switch between any historical or cutting-edge Solidity compiler version without manual compilation. An essential asset for running legacy smart contract verification suites.
 
-* **[Aderyn](https://github.com/Cyfrin/aderyn)** [![GitHub stars](https://img.shields.io/github/stars/Cyfrin/aderyn?style=social&color=white)](https://github.com/Cyfrin/aderyn/stargazers)  
+* **[Aderyn](https://github.com/Cyfrin/aderyn)** [![GitHub_Stars](https://img.shields.io/github/stars/Cyfrin/aderyn?style=social&color=white)](https://github.com/Cyfrin/aderyn/stargazers)  
   Cyfrin's ultra-fast Rust-based Solidity static analyzer. Traverses the Abstract Syntax Tree (AST) to uncover protocol-level anti-patterns, security vulnerabilities, and gas inefficiencies.
 
-* **[SmartBugs](https://github.com/smartbugs/smartbugs)** [![GitHub stars](https://img.shields.io/github/stars/smartbugs/smartbugs?style=social&color=white)](https://github.com/smartbugs/smartbugs/stargazers)  
+* **[SmartBugs](https://github.com/smartbugs/smartbugs)** [![GitHub_Stars](https://img.shields.io/github/stars/smartbugs/smartbugs?style=social&color=white)](https://github.com/smartbugs/smartbugs/stargazers)  
   Reproducible execution and benchmarking framework that orchestrates multiple smart contract analysis tools (including Slither, Mythril, HoneyBadger, and Oyente) across curated datasets.
 
-* **[Securify2](https://github.com/eth-sri/securify2)** [![GitHub stars](https://img.shields.io/github/stars/eth-sri/securify2?style=social&color=white)](https://github.com/eth-sri/securify2/stargazers)  
+* **[Securify2](https://github.com/eth-sri/securify2)** [![GitHub_Stars](https://img.shields.io/github/stars/eth-sri/securify2?style=social&color=white)](https://github.com/eth-sri/securify2/stargazers)  
   Security scanner for Ethereum smart contracts developed by the ICE Center at ETH Zurich. Utilizes Datalog semantic patterns to rigorously prove compliance against severe vulnerability classes.
 
-* **[KEVM (EVM Semantics)](https://github.com/runtimeverification/evm-semantics)** [![GitHub stars](https://img.shields.io/github/stars/runtimeverification/evm-semantics?style=social&color=white)](https://github.com/runtimeverification/evm-semantics/stargazers)  
+* **[KEVM (EVM Semantics)](https://github.com/runtimeverification/evm-semantics)** [![GitHub_Stars](https://img.shields.io/github/stars/runtimeverification/evm-semantics?style=social&color=white)](https://github.com/runtimeverification/evm-semantics/stargazers)  
   Formal, mathematically validated specification of Ethereum Virtual Machine (EVM) bytecode written in the K Framework. Forms the theoretical foundation for high-assurance formal verification.
 
-* **[ESBMC](https://github.com/esbmc/esbmc)** [![GitHub stars](https://img.shields.io/github/stars/esbmc/esbmc?style=social&color=white)](https://github.com/esbmc/esbmc/stargazers)  
+* **[ESBMC](https://github.com/esbmc/esbmc)** [![GitHub_Stars](https://img.shields.io/github/stars/esbmc/esbmc?style=social&color=white)](https://github.com/esbmc/esbmc/stargazers)  
   Permissively licensed SMT-based bounded model checker supporting Solidity. Mathematically proves the absence of runtime bugs (overflows, memory corruption, bounds violations) and verifies user-defined assertions.
 
-* **[Medusa](https://github.com/crytic/medusa)** [![GitHub stars](https://img.shields.io/github/stars/crytic/medusa?style=social&color=white)](https://github.com/crytic/medusa/stargazers)  
+* **[Medusa](https://github.com/crytic/medusa)** [![GitHub_Stars](https://img.shields.io/github/stars/crytic/medusa?style=social&color=white)](https://github.com/crytic/medusa/stargazers)  
   Cross-platform, Go-ethereum-based fuzzer inspired by Echidna. Features parallelized fuzz testing across multiple workers with coverage-guided mutation and custom testing APIs.
 
-* **[pyevmasm](https://github.com/crytic/pyevmasm)** [![GitHub stars](https://img.shields.io/github/stars/crytic/pyevmasm?style=social&color=white)](https://github.com/crytic/pyevmasm/stargazers)  
+* **[pyevmasm](https://github.com/crytic/pyevmasm)** [![GitHub_Stars](https://img.shields.io/github/stars/crytic/pyevmasm?style=social&color=white)](https://github.com/crytic/pyevmasm/stargazers)  
   Python EVM Assembler and Disassembler with CLI and library support. Used by security auditors to inspect and mutate raw contract bytecode.
 
-* **[Scribble](https://github.com/ConsenSysDiligence/scribble)** [![GitHub stars](https://img.shields.io/github/stars/ConsenSysDiligence/scribble?style=social&color=white)](https://github.com/ConsenSysDiligence/scribble/stargazers)  
+* **[Scribble](https://github.com/ConsenSysDiligence/scribble)** [![GitHub_Stars](https://img.shields.io/github/stars/ConsenSysDiligence/scribble?style=social&color=white)](https://github.com/ConsenSysDiligence/scribble/stargazers)  
   ConsenSys Diligence's specification language and instrumentation tool that transforms high-level contract specifications into concrete runtime assertions directly inside Solidity code.
 
-* **[Kontrol](https://github.com/runtimeverification/kontrol)** [![GitHub stars](https://img.shields.io/github/stars/runtimeverification/kontrol?style=social&color=white)](https://github.com/runtimeverification/kontrol/stargazers)  
+* **[Kontrol](https://github.com/runtimeverification/kontrol)** [![GitHub_Stars](https://img.shields.io/github/stars/runtimeverification/kontrol?style=social&color=white)](https://github.com/runtimeverification/kontrol/stargazers)  
   Runtime Verification's formal verification engine integrating Foundry tests with KEVM. Mathematically proves that EVM bytecode executions adhere strictly to formal specifications.
 
-* **[EVM Fuzz (Spamoor)](https://github.com/ethpandaops/spamoor)** [![GitHub stars](https://img.shields.io/github/stars/ethpandaops/spamoor?style=social&color=white)](https://github.com/ethpandaops/spamoor/stargazers)  
+* **[EVM Fuzz (Spamoor)](https://github.com/ethpandaops/spamoor)** [![GitHub_Stars](https://img.shields.io/github/stars/ethpandaops/spamoor?style=social&color=white)](https://github.com/ethpandaops/spamoor/stargazers)  
   Spams randomly generated EVM bytecode onto chains to uncover consensus bugs, client crashes, and opcode edge-case regressions under extreme stress loads.
 
-* **[AI Smart Contract Auditor](https://github.com/iktok90-design/ai-smart-contract-auditor)** [![GitHub stars](https://img.shields.io/github/stars/iktok90-design/ai-smart-contract-auditor?style=social&color=white)](https://github.com/iktok90-design/ai-smart-contract-auditor/stargazers)  
+* **[AI Smart Contract Auditor](https://github.com/iktok90-design/ai-smart-contract-auditor)** [![GitHub_Stars](https://img.shields.io/github/stars/iktok90-design/ai-smart-contract-auditor?style=social&color=white)](https://github.com/iktok90-design/ai-smart-contract-auditor/stargazers)  
   AI-augmented auditing engine backed by a database of 47,000+ historical audit findings and 300,000+ PoCs. Employs ChromaDB vector search to synthesize automated exploit proofs.
 
-* **[MIESC](https://github.com/fboiero/MIESC)** [![GitHub stars](https://img.shields.io/github/stars/fboiero/MIESC?style=social&color=white)](https://github.com/fboiero/MIESC/stargazers)  
+* **[MIESC](https://github.com/fboiero/MIESC)** [![GitHub_Stars](https://img.shields.io/github/stars/fboiero/MIESC?style=social&color=white)](https://github.com/fboiero/MIESC/stargazers)  
   Multi-layer Intelligent Evaluation for Smart Contracts orchestrating 30+ security tools across 9 defense layers (Static, Dynamic, Symbolic, Formal, AI, Threat Modeling, and Ensembles).
 
 ---
@@ -169,7 +169,7 @@ Contributions are welcome from the entire Web3 and cybersecurity community! To s
 2. 🌿 **Create a feature branch** (`git checkout -b feature/add-new-verification-tool`).
 3. ✍️ **Update `README.md`**:
    - Follow the existing tabular structure for SaaS tools (include valuation/ARR, specific starting price, and concrete free tier limits).
-   - For open-source tools, include the repository URL, stargazers social badge, and place it in the correct position according to star count.
+   - For open-source tools, include the repository URL, stargazers social badge, and place it in the correct position according to Stars_Count.
 4. 🚀 **Commit your changes** with a clear message (`git commit -m 'feat: add NewTool to open-source verification list'`).
 5. 📬 **Submit a Pull Request** describing the platform's verification methodology and features.
 
